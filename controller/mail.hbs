@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="https://raw.githubusercontent.com/amy12-3/amethyst-chatbot/main/logo.png" type="image/x-icon">
     <title>Amethyst</title>
     <style>
       
@@ -21,7 +21,7 @@ body {
 
 .card {
   background-color: #fcf8ff;
-  height: 700px;
+  padding: 25px 0px;
   width: 500px;
   position: absolute;
   margin: auto;
@@ -74,14 +74,24 @@ body {
   background-color: #dcc2ff;
   color: white;
 }
-
+@media (max-width: 800px){
+    .container{
+        width: 100%;
+    }
+}
+@media (max-width: 600px){
+    .container{
+        width: 85%;
+        display: block;
+    }
+}
 
     </style>
 </head>
 <body>
     <div class="card">
       <div class="gg">
-        <img  src="img/logo.png" alt="" width="160px" height="160px">
+        <img  src="https://raw.githubusercontent.com/amy12-3/amethyst-chatbot/main/logo.png" alt="" width="160px" height="160px">
         
       </div>
       <div class="confirm">
@@ -111,7 +121,8 @@ body {
       <div class="confirm">
         <h4>___________________________________________________</h4>
       </div>
-      <h4 style="text-align: center;">You have also won {{creditPoints}} credits.</h4>
+      <h4 style="text-align: center;">You have won a Gift Card.</h4>
+      <h4 style="text-align: center;line-height:0.5rem ;">Gift Card no : SDA123DFG</h4>
       <h4 style="text-align: center;">Thanks,{{userName}}</h4>
     </div>
 </body>
