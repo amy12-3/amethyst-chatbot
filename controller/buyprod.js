@@ -22,7 +22,7 @@ route.post('/buyprod',(req,res)=>{
         userName: req.body.userName,
         productName: req.body.productName,
         amount: req.body.amount,
-        credipoint: req.body.creditPoints,
+        creditpoint: req.body.creditPoints,
         orderId: req.body.orderId
     })
 
