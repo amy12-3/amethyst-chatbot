@@ -23,6 +23,7 @@ route.post('/buyprod',(req,res)=>{
         productName: req.body.productName,
         amount: req.body.amount,
         creditPoints: req.body.creditPoints,
+        orderId: req.body.orderId
     })
 
     const mailOptions = {
